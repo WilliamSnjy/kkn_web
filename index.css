@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profil-img{
+    width: 500px;
+    display: flex;
+}
+
+.title-img{ 
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+nav{
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    background: rgba(0, 40, 62, 1);
+}
+
+ul{
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    padding: 20px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    color: #B8E6FF;
+}
+
+.dropdown-pemerintahan, .dropdown-layanan{
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+    z-index: 1;
+}
+
+.dropdown-pemerintahan a, .dropdown-layanan a{
+    background-color: #024E77;
+    float: none;
+    color: white;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.pemerintahan:hover .dropdown-pemerintahan, .layanan:hover .dropdown-layanan{
+    display: block;
+}
+
+.card-hover{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover{
+    background-color: #1F8FCC;
+}
+
+.content-1{
+    height: 100vh;
+    background: url('Background\ Web.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+.body-content-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body-card{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #024E77;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.header-content-1{
+    margin-bottom: 20px;
+}
+
+.content-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sejarah{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.sejarah h1{
+    text-decoration: underline;
+}
+
+.sejarah p{
+    margin: 10px 0 10px 0;
+    text-align: justify;
+}
+
+.map{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-3{
+    height: 100vh;
+}
+
+.content-visi-misi{
+    height: 50vh;
+    background-image: url('background\ visi\ misi.png');
+    background-size: cover;
+}
+
+.content-visi-misi-title{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 50px;
+}
+
+.content-visi-misi-title h1 a{
+    text-decoration: none;
+    color: #1F8FCC;
+}
+
+.content-visi-misi-title h1 a:hover{
+    color: #024E77;
+}
+
+.visi-content{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content-struktur-organisasi{
+    height: 30vh;
+}
+
+.motto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.misi{
+    padding: 20px;
+}
+
+.misi ol li{
+    padding: 10px;
+}
+
+.struktur-organisasi{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tugasfungsi{
+    padding: 30px;
+}
+
+.peraturan{
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.peraturan ol li{
+    padding-top: 10px;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.peraturan {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.e-ktp{
+    padding: 50px;
+}
+
+.ktk{
+    padding: 50px;
+}
+
+.akte-kelahiran{
+    padding: 50px;
+}
