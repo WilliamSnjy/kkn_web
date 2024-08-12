@@ -156,6 +156,7 @@ ul li a:hover{
 
 .content-3{
     height: 100vh;
+    background-color: rgb(0,40,62,0.8);
 }
 
 .content-visi-misi{
@@ -268,4 +269,79 @@ ul li a:hover{
 
 .akte-kelahiran{
     padding: 50px;
+}
+
+div.produk-list{
+    margin: 10px;
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+.produk1-box, .produk2-box{
+    padding: 10px;
+}
+
+.produk1{
+    background: url('produk1.png');
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+}
+
+.produk2{
+    background: url('PRODUK2.png');
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+}
+
+.produk3{
+    background: url('produk3.png');
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+}
+
+.produk4{
+    background: url('produk4.png');
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+}
+
+.produk5{
+    background: url('produk5.png');
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+}
+
+.produk6{
+    background: url('produk6.png');
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+}
+
+.produk7{
+    background: url('produk7.png');
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+}
+
+.produk8{
+    background: url('produk8.png');
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+}
+
+.title-content-3{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
