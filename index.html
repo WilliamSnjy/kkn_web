@@ -48,7 +48,7 @@
             <div class="body-content-1">
                 <h3>PELAYANAN</h3>
                 <div class="body-card">
-                    <a class="card-hover" href="">
+                    <a class="card-hover" href="e-ktp.html">
                         <div class="card">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-person-vcard" viewBox="0 0 16 16">
                                     <path d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5"/>
@@ -57,7 +57,7 @@
                             E-KTP
                         </div>
                     </a>
-                    <a class="card-hover" href="">
+                    <a class="card-hover" href="ktk.html">
                         <div class="card">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
                                     <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
@@ -65,7 +65,7 @@
                                 KK  
                         </div>
                     </a>
-                    <a class="card-hover" href="">
+                    <a class="card-hover" href="akta.html">
                         <div class="card">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
                                     <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
@@ -95,7 +95,34 @@
         <div class="content-3">
             <div class="potensi" id="potensi">
                 <div class="title-content-3">
-                    <h1>Potensi UMKM Kelurahan Punggawan</h1>
+                    <h1>Potensi Kelurahan Punggawan</h1>
+                    <h1>UPPKA LESTARI JAYA</h1>
+                </div>
+                <button class="accordion-index"><h1>VISI MISI UPPKA LESTARI JAYA</h1></button>
+                <div class="peraturan-index">
+                    <div class="peraturan-index-1">
+                        <div class="peraturan-index-title">
+                            Visi
+                        </div>
+                        <p>
+                            Keluarga di Kelurahan Punggawan memiliki usaha yang mampu menjadi
+                            sumber pendapatan utama atau tambahan demi mewujudkan keluarga
+                            mandiri dan sejahtera
+                        </p>
+                    </div>
+                    <div class="peraturan-index-2">
+                        <div class="peraturan-index-title">
+                            Misi
+                        </div>
+                        <ol>
+                            <li>Pendataan usaha rumah tangga di Kelurahan Punggawan</li>
+                            <li>Pembinaan usaha rumah tangga di Kelurahan Punggawan</li>
+                            <li>Pemasaran bersama usaha rumah tangga di Kelurahan Punggawan</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="title-produk">
+                    <h1>Produk Produk UPPKA Kelurahan Punggawan</h1>
                 </div>
                 <div class="produk-list">
                     <div class="produk1-box">
@@ -126,5 +153,21 @@
             </div>
         </div>
     </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion-index");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
+    </script>
 </body>
 </html>
